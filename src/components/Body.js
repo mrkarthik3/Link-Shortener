@@ -29,6 +29,11 @@ const Home = (props) => {
       setShowWarning(true);
     }
   }
+
+  function hideCautionMsg() {
+    setShowWarning(false);
+  }
+
   function handleSubmit(event) {
     event.preventDefault();
     setfinalOutput("");
@@ -101,7 +106,7 @@ const Home = (props) => {
           type="submit"
           className="button-styled"
           onMouseOver={showCautionMsg}
-          onMouseOut={showCautionMsg}
+          onMouseOut={hideCautionMsg}
         >
           Shorten!
         </button>
