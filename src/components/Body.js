@@ -81,7 +81,7 @@ const Home = (props) => {
       <h2>My friend... It's time to "Go Vegan"</h2>
       <p>You can shorten URLs only if you agree to "Go Vegan"</p>
       <p>
-        I accept the{" "}
+        I promise to{" "}
         <span
           className="toslink"
           onClick={() => {
@@ -90,7 +90,7 @@ const Home = (props) => {
         >
           Go Vegan
         </span>{" "}
-        Policy
+        from this moment
         <input type="checkbox" onChange={tosHandler} checked={tosAgreed} />{" "}
         &nbsp;
       </p>
